@@ -14,6 +14,7 @@ public class UserController {
 
 	@GetMapping("/getAll")
 	public List<Users> getAll(){
+		System.out.println("In controller");
 		return userRepository.findAll();
 
 	}
