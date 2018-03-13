@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8099
+ADD target/SampleMongoDBApp-0.0.1-SNAPSHOT.jar SampleMongoDBApp-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","SampleMongoDBApp-0.0.1-SNAPSHOT.jar"]
